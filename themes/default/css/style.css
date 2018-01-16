@@ -1,0 +1,511 @@
+header {
+padding:10px 0px;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.search{
+     padding: 10px 0;
+}
+
+.top-usernav{
+    padding: 10px 0;
+ }
+
+
+.nav-tabs.nav-justified > li > a {
+    border-bottom: 0px solid #ddd;
+    border-radius: 0px 0px 0 0;
+}
+
+.nav-tabs>li>a{
+    border-color:#fff #fff #eee #eee
+}
+
+.nav-tabs>li>a:hover{
+    border-color:#fff #fff #eee #eee
+}
+
+.nav-tabs> li .no-bdr{
+    border-left:0px solid #fff;
+}
+
+.navbar-brand-vshare {
+    padding: 8px;
+}
+.navbar-btn-vshare {
+    padding: 7px 10px;
+}
+.search-box-xs {
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+
+.watch-uplod-share h2{
+    margin:0px;
+    padding:0px;
+    font-size:25px
+}
+
+.watch-uplod-share .watch{
+    background-color:#e7e7e7;
+    padding:3px
+}
+
+.watch-uplod-share .icon{
+    background-color: transparent;
+    border-radius: 5px;
+    color: #337ab7;
+    float: left;
+    font-size: 60px;
+    height:80px;
+    line-height: 80px;
+    margin: 0 10px 0 auto;
+    text-align: center;
+    width: 70px;
+}
+
+@media (min-width: 1200px) {
+    .border-r{
+    border-right:1px solid #ddd
+}
+}
+
+.panel-default > .panel-heading {
+    background-image: linear-gradient(to bottom, #fff 0px, #f8f8f8 100%) !important;
+    background-repeat: repeat-x;
+}
+
+.thumbnail img {
+    max-height: 125px;
+}
+.preview {
+    position: relative;
+}
+.preview img {
+    max-height: 125px;
+}
+.preview .video-time {
+    background-color: #000000;
+    border-radius: 5px;
+    bottom: 0;
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+}
+
+/* tag cloud start */
+
+a.earliest:link {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+a.earliest:visited {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+a.earliest:hover {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+a.earliest:active {
+    text-decoration: none;
+    color: #CCCCCC;
+}
+a.earlier:link {
+    text-decoration: none;
+    color: #99c;
+}
+a.earlier:visited {
+    text-decoration: none;
+    color: #99c;
+}
+a.earlier:hover {
+    text-decoration: none;
+    color: #99c;
+}
+a.earlier:active {
+    text-decoration: none;
+    color: #99c;
+}
+a.later:link {
+    text-decoration: none;
+    color: #99f;
+}
+a.later:visited {
+    text-decoration: none;
+    color: #99f;
+}
+a.later:hover {
+    text-decoration: none;
+    color: #99f;
+}
+a.later:active {
+    text-decoration: none;
+    color: #99f;
+}
+a.latest:link {
+    text-decoration: none;
+    color: #00f;
+}
+a.latest:visited {
+    text-decoration: none;
+    color: #00f;
+}
+a.latest:hover {
+    text-decoration: none;
+    color: #00f;
+}
+a.latest:active {
+    text-decoration: none;
+    color: #00f;
+}
+/* tag cloud end */
+
+img.preview {
+    width: 100%;
+}
+
+/* myaccount */
+.myaccount .glyphicon {
+    background: none repeat scroll 0 0 #337ab7;
+    border-radius: 61px;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    width: 40px;
+    text-align:center;
+}
+
+.myaccount .delete {
+    background: none repeat scroll 0 0 #ff0000;
+ }
+
+.myaccount h4 {
+    padding: 5px 0;
+}
+.profile-details dt {
+    width: 100px;
+}
+.profile-details dd {
+    margin-left: 120px;
+}
+.video-queue {
+    bottom: 0;
+    position: absolute;
+}
+.quicklist_box {
+    bottom: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+}
+.quicklist_box .panel {
+    margin-bottom: 0;
+}
+.quicklist_box .panel-heading h4 {
+    margin: 0;
+}
+.quicklist_box .panel-body {
+    max-height: 430px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 5px;
+}
+.quicklist_box hr {
+    margin: 10px 0;
+}
+.quicklist_box .thumbnail {
+    margin-bottom: 0;
+}
+.text-shadow {
+    text-shadow: 0 0 2px #000000;
+}
+.bdr-left{
+   border-left:1px solid #ddd
+}
+
+.user-page h4{
+    margin:0px;
+    padding:0px;
+}
+
+.user-page img.profile-cover{
+    z-index: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    max-height: 227px;
+}
+
+.profile-pic-container {
+    display: inline-block;
+    float: left;
+    margin: -90px 10px 0 50px;
+    position: relative;
+}
+.profile-pic-container img {
+    width: 160px;
+    height: 160px;
+    max-height: 160px;
+}
+.profile-pic-container .btn-edit {
+    position: absolute;
+    right: 4px;
+    display: none;
+}
+.profile-pic-container:hover .btn-edit {
+    display: block;
+}
+
+.user-page .userinfo{
+    margin:0px 10px 10px 0px;
+}
+
+.user-page .userinfo>h1{
+    margin:0px;
+    padding:;
+
+}
+
+@media (max-width:768px) {
+
+
+.user-page .userinfo>h1{
+
+    font-weight: 700;
+    font-size:16px;
+}
+
+.user-page .profile-pic-container {
+    margin: -45px 10px 0px 25px;
+}
+.user-page .profile-pic-container img {
+    width: 90px;
+    height: 90px;
+}
+
+}
+
+.user-page .user-stats {
+    display: block;
+    list-style: outside none none;
+    margin: 0px;
+    padding:0px;
+}
+
+.user-page .user-stats li {
+    border-left: 1px solid #ededed;
+    display: inline-block;
+    float: left;
+    padding: 2px 12px;
+}
+
+.user-page .user-stats li:first-child {
+    border-left: medium none;
+}
+
+.user-page .about-me{
+      margin-bottom: 10px;
+    margin-top: 10px;
+    padding:5px;
+}
+
+#recent-videos-carousel .thumbnail {
+    margin-bottom: 0;
+}
+
+#recent-videos-carousel .thumbnail img {
+    height: 130px;
+    width: 100%;
+}
+
+#recent-videos-carousel .carousel-control {
+    width: 5%;
+    opacity: 1;
+    text-shadow: 0 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+#recent-videos-carousel .carousel-control.left {
+    background-image: none;
+}
+
+#recent-videos-carousel .carousel-control.right {
+    background-image: none;
+}
+
+#recent-videos-carousel .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 10%;
+    color:#337ab7;
+}
+
+#recent-videos-carousel .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 10%;
+    color:#337ab7;
+}
+
+.channel h5{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.65);
+    bottom: 0;
+    color: #fff;
+    width:100%;
+    position: absolute;
+    padding:5px;
+    margin:0px;
+    text-shadow: 1px 1px #000;
+    font-size: 17px;
+    font-weight: bold
+}
+
+.user-friends .thumbnail a > img {
+    min-height: 130px;
+}
+
+.watch-view-count {
+    color: #666;
+    font-size: 19px;
+    line-height: 45px;
+}
+
+.watch-view-progress {
+    height: 3px;
+    margin-bottom: 0;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+@media all and (max-width: 768px) and (orientation: landscape) {
+    .col-orient-ls {
+        float: left;
+        width: 50%;
+    }
+    .col-orient-ls-members {
+        float: left;
+        width: 25%;
+    }
+}
+.view-video-title {
+    font-size: 25px;
+    margin-top: 10px;
+}
+.padding-no {
+    padding: 0;
+}
+.view-video-desc {
+    color: #484848;
+    font-size: 13px;
+}
+.details-collapse {
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+.details-expand {
+    height: auto;
+}
+.btn-collapse-expand {
+    background-color: #FFFFFF;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.normal-white-space {
+    white-space: normal!important;
+}
+
+.video-block .thumbnail {
+    border: medium none;
+    box-shadow: none;
+    height: 202px;
+    margin-bottom: 5px;
+    margin-left: -7px;
+    margin-right: -7px;
+    overflow: hidden;
+}
+.video-block .thumbnail .caption {
+    padding: 0;
+}
+.video-title {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    max-height: 15px;
+    overflow: hidden;
+}
+.video-title a {
+    font-weight: bold;
+    line-height: 1.3px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+h4.video-title {
+    font-size: 14px;
+}
+h5.video-title {
+    font-size: 13px;
+}
+.video-block-list .thumbnail {
+    height: auto;
+}
+.video-block-list .video-title {
+    max-height: 31px;
+}
+.home-videos .thumbnail {
+    height: 185px;
+}
+
+.profile-groups img {
+    min-height:100px;
+}
+
+.members .user-title {
+    background: #000;
+    bottom: 0;
+    color: #fff;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px;
+    position: absolute;
+    text-shadow: 1px 1px #000;
+    width: 100%;
+}
+
+.thumbnail.members {
+    border: 0 none;
+    box-shadow: none;
+    margin-bottom: 5px;
+    margin-left: -7px;
+    margin-right: -7px;
+    overflow: hidden;
+}
+.members .preview {
+    max-width: 160px;
+}
+.members img.img-responsive {
+    margin-left: 0;
+    max-height: 160px;
+}
+.members .caption {
+    padding: 5px 0;
+}
+.profile-cover-container {
+    position: relative;
+}
+.profile-cover-container .btn-edit {
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.profile-cover-container:hover .btn-edit {
+    display: block;
+}

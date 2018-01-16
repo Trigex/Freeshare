@@ -1,0 +1,105 @@
+#Options +FollowSymLinks
+RewriteEngine on
+# FOR URL WITH OUT WWW
+#RewriteCond %{HTTP_HOST} !^domain.com$ [NC]
+#RewriteRule ^(.*)$ http://domain.com/$1 [L,R=301]
+# FOR URL WITH WWW
+#RewriteCond %{HTTP_HOST} ^domain.com$ [NC]
+#RewriteRule ^(.*)$ http://www.domain.com/$1 [L,R=301]
+RewriteRule ^admin$ - [L]
+RewriteRule ^admin/(.*) - [L]
+RewriteRule ^install$ - [L]
+RewriteRule ^install/(.*) - [L]
+RewriteRule ^ubr/(.*) - [L]
+RewriteRule ^$ index.php
+RewriteRule ^view/(.*)/(.*)/ view_video.php?id=$1 [L,QSA]
+RewriteRule ^view/(.*)/ video_redirect.php?id=$1 [L,QSA]
+RewriteRule ^view/(.*) video_redirect.php?id=$1 [L,QSA]
+RewriteRule ^tags/ tags.php [L,QSA]
+RewriteRule ^tag/(.*)/(.*) tag.php?search_string=$1&page=$2 [L,QSA]
+RewriteRule ^cache/ index.php [L,QSA]
+RewriteRule ^channels/ channels.php [L,QSA]
+RewriteRule ^upload/success/(.*)/(.*)/ upload_success.php?id=$1&upload_id=$2 [L,QSA]
+RewriteRule ^upload/embed/ upload_embed.php
+RewriteRule ^upload/ upload.php [L,QSA]
+RewriteRule ^channel/(.*)/(.*)/recent/(.*) video.php?category=recent&chid=$1&page=$3
+RewriteRule ^channel/(.*)/(.*)/viewed/(.*) video.php?category=viewed&chid=$1&page=$3
+RewriteRule ^channel/(.*)/(.*)/(.*)/(.*) video.php?chid=$1&category=$2&view_type=$3&page=$4
+RewriteRule ^channel/(.*)/(.*)/ channel_details.php?id=$1
+RewriteRule ^download/(.*)/ download.php?video_id=$1 [L,QSA]
+RewriteRule ^friends/recommend/(.*)/ recommend_friends.php?video_id=$1 [QSA,L]
+RewriteRule ^friends/invite/ invite_friends.php?user_name=$1&page=$2 [L,QSA]
+RewriteRule ^friends/(.*) friends.php?page=$1 [L,QSA]
+RewriteRule ^members/(.*)/(.*) members.php?sort=$1&page=$2 [L,QSA]
+RewriteRule ^members/(.*) members.php?page=$1 [L,QSA]
+RewriteRule ^detailed/recent/(.*) video.php?category=recent&page=$1&view_type=detailed
+RewriteRule ^detailed/viewed/(.*) video.php?category=viewed&page=$1&view_type=detailed
+RewriteRule ^detailed/discussed/(.*) video.php?category=discussed&page=$1&view_type=detailed
+RewriteRule ^detailed/favorites/(.*) video.php?category=favorites&page=$1&view_type=detailed
+RewriteRule ^detailed/rated/(.*) video.php?category=rated&page=$1&view_type=detailed
+RewriteRule ^detailed/featured/(.*) video.php?category=featured&page=$1&view_type=detailed
+RewriteRule ^recent/(.*) video.php?category=recent&page=$1
+RewriteRule ^viewed/(.*) video.php?category=viewed&page=$1
+RewriteRule ^edit/video/(.*) video_edit.php?video_id=$1
+RewriteRule ^discussed/(.*) video.php?category=discussed&page=$1
+RewriteRule ^favorites/(.*) video.php?category=favorites&page=$1
+RewriteRule ^rated/(.*) video.php?category=rated&page=$1
+RewriteRule ^featured/(.*) video.php?category=featured&page=$1
+RewriteRule ^rss/new/ rss.php?type=new [L]
+RewriteRule ^rss/comments/ rss.php?type=comments [L]
+RewriteRule ^rss/views/ rss.php?type=views [L]
+RewriteRule ^group/new/ group_new.php
+RewriteRule ^group/(.*)/join/(.*)/ group_invite_confirm.php?group_url=$1&key=$2 [L,QSA]
+RewriteRule ^group/(.*)/members/(.*) group_members.php?group_url=$1&page=$2
+RewriteRule ^group/(.*)/videos/(.*) group_videos.php?group_url=$1&page=$2
+RewriteRule ^group/(.*)/add/(.*) group_add_videos.php?group_url=$1&page=$2
+RewriteRule ^group/(.*)/fav/(.*) group_add_fav_videos.php?group_url=$1&page=$2
+RewriteRule ^group/(.*)/topic/(.*) group_posts.php?group_url=$1&topic_id=$2
+RewriteRule ^group/(.*)/invite/ invite_members.php?group_url=$1 [L,QSA]
+RewriteRule ^group/(.*)/edit/ group_edit.php?group_url=$1 [L,QSA]
+RewriteRule ^group/(.*)/ group_home.php?group_url=$1  [L,QSA]
+RewriteRule ^groups/(.*)/(.*)/(.*) groups.php?chid=$1&page=$3
+RewriteRule ^groups/(.*)/(.*) groups.php?category=$1&page=$2
+RewriteRule ^include/(.*) http://www.vshare.in
+RewriteRule ^login/ login.php [L,QSA]
+RewriteRule ^logout/ logout.php [L,QSA]
+RewriteRule ^signup/ signup.php [L,QSA]
+RewriteRule ^family_filter/ family_filter.php [L,QSA]
+RewriteRule ^pages/(.*).html$ show_page.php?name=$1 [QSA,L]
+RewriteRule ^v/(.*)/ video_embed.php?video_id=$1 [L,QSA]
+RewriteRule ^verify/user/(.*)/(.*)/(.*)/ user_signup_verify.php?u=$1&i=$2&k=$3
+RewriteRule ^verify/email/(.*)/(.*)/(.*)/ confirm_email.php?u=$1&i=$2&k=$3
+RewriteRule ^confirm/friend/(.*)/(.*) friend_accept.php?id=$1&key=$2
+RewriteRule ^search/(.*)/(.*) search_videos.php?search_string=$1&page=$2 [L,QSA]
+RewriteRule ^style/(.*)/ style.php?css=$1 [L,QSA]
+RewriteRule ^privacy/ user_privacy.php [L,QSA]
+RewriteRule ^video_response_upload/(.*) upload_video_response.php?vid=$1 [L,QSA]
+RewriteRule ^response/(.*)/videos/(.*) video_responses.php?video_id=$1&page=$2 [L,QSA]
+RewriteRule ^verify/response/(.*)/(.*)/(.*)/ video_response_verify.php?u=$1&i=$2&k=$3
+RewriteRule ^password/ password_change.php [L,QSA]
+RewriteRule ^([^/\.]+)/account/ myaccount.php
+RewriteRule ^([^/\.]+)/favorites/(.*) user_favorites.php?user_name=$1&page=$2
+RewriteRule ^([^/\.]+)/playlist/(.*)/(.*) user_playlist.php?user_name=$1&playlist_id=$2&page=$3
+RewriteRule ^([^/\.]+)/playlist/(.*) user_playlist.php?user_name=$1&page=$2
+RewriteRule ^([^/\.]+)/friends/videos/(.*) user_friends_videos.php?user_name=$1&page=$2 [L,QSA]
+RewriteRule ^([^/\.]+)/friends/favorites/(.*) user_friends_favourites.php?user_name=$1&page=$2 [L,QSA]
+RewriteRule ^([^/\.]+)/friends/(.*) user_friends.php?user_name=$1&page=$2
+RewriteRule ^([^/\.]+)/public/(.*)$ user_videos.php?user_name=$1&type=public&page=$2
+RewriteRule ^([^/\.]+)/private/(.*)$ user_videos.php?user_name=$1&type=private&page=$2 [L,QSA]
+RewriteRule ^([^/\.]+)/groups/(.*)$ user_groups.php?user_name=$1&page=$2 [L,QSA]
+RewriteRule ^([^/\.]+)/edit/(.*)$ user_profile_edit.php?user_name=$1 [L,QSA]
+RewriteRule ^([^/\.]+)/unsubscribe/(.*) email_unsubscribe.php?user_name=$1&vkey=$2 [L,QSA]
+RewriteRule ^([^/\.]+)?/?$ user.php?user_name=$1 [L,QSA]
+RewriteRule ^v/(.*) video_embed.php?video_id=$1 [L,QSA]
+
+<IfModule mod_security.c>
+SecFilterEngine Off
+SecFilterScanPOST Off
+</IfModule>
+
+<IfModule mod_gzip.c>
+mod_gzip_on No
+</IfModule>
+
+#ErrorDocument 404 /404.php
+

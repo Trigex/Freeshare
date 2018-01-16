@@ -1,0 +1,22 @@
+<?php
+
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+session_start();
+
+$db_host     = 'localhost';
+$db_name     = 'vshare';
+$db_user     = 'vshare';
+$db_pass     = 'PASSWORD';
+
+$language = 'en';
+
+$config = array();
+
+$config['ffmpeg']          =  '/usr/local/bin/ffmpeg';
+$config['mplayer']          =  '/usr/bin/mplayer';
+$config['mencoder']          =  '/usr/bin/mencoder';
+$config['flvtool']          =  '/usr/bin/flvtool2';
+$config['basedir']        =  '/home/video/public_html';
+$config['baseurl']        =  'http://video.bizhat.com';
+
+include($config['basedir'] . '/include/vshare.php');

@@ -1,0 +1,1 @@
+DELETE FROM `sconfig` WHERE `soption`='signup_captcha';

@@ -1,0 +1,19 @@
+DELETE FROM `email_templates` WHERE `email_id`='user_signup_mail';
+INSERT INTO `email_templates` (`email_id`, `email_subject`, `email_body`, `comment`) VALUES ('user_signup', 'Welcome to [SITE_NAME]', '<p>Hi [USERNAME],</p><p>Welcome to [SITE_NAME].</p><p>Please keep this email for your records. Your account information is as follows:</p><p>----------------------------</p><p>Username: [USERNAME]<br>Password: [PASSWORD]<br>Site URL: [SITE_URL]<br></p><p>----------------------------</p><p>Your password has been securely stored in our database and cannot be retrieved. In the event that it is forgotten, you will be able to reset it using the email address associated with your account.</p><p>Thank you for registering.</p><p>Thanks,</p><p>[SITE_NAME] Team.</p>', 'Welcome mail for users after signed up');
+INSERT INTO `email_templates` (`email_id`, `email_subject`, `email_body`, `comment`) VALUES ('user_signup_verify', 'Welcome to [SITE_NAME]', '<p>Hi [USERNAME],</p><p>Welcome to [SITE_NAME].</p><p>Please keep this email for your records. Your account information is as follows:</p><p>----------------------------</p><p>Username: [USERNAME]<br>Password: [PASSWORD]<br>Site URL: [SITE_URL]<br></p><p>----------------------------</p><p>Please visit the following link in order to activate your account:</p><p>[VERIFY_LINK]</p><p>Your password has been securely stored in our database and cannot be retrieved. In the event that it is forgotten, you will be able to reset it using the email address associated with your account.</p><p>Thank you for registering.</p><p>Thanks,</p><p>[SITE_NAME] Team.</p>', 'Welcome mail for users when signup verification enabled');
+INSERT INTO `email_templates` (`email_id`, `email_subject`, `email_body`, `comment`) VALUES ('user_signup_verify_admin', 'Welcome to [SITE_NAME]', '<p>Hi [USERNAME],</p><p>Welcome to [SITE_NAME].</p><p>Please keep this email for your records. Your account information is as follows:</p><p>----------------------------</p><p>Username: [USERNAME]<br>Password: [PASSWORD]<br>Site URL: [SITE_URL]<br></p><p>----------------------------</p><p>Your account is currently inactive and will need to be approved by an administrator before you can log in. Another email will be sent when this has occurred.</p><p>Your password has been securely stored in our database and cannot be retrieved. In the event that it is forgotten, you will be able to reset it using the email address associated with your account.</p><p>Thank you for registering.</p><p>Thanks,</p><p>[SITE_NAME] Team.</p>', 'Welcome mail for users, when signup verification by Admin');
+INSERT INTO `email_templates` (`email_id`, `email_subject`, `email_body`, `comment`) VALUES ('user_signup_verify_admin_active', 'Account activated on [SITE_NAME]', '<p>Hi [USERNAME],</p><p>Your account on "[SITE_NAME]" has been activated by administrator, you may login now.</p><p>Login URL: [SITE_URL]/login/</p><p>Your password has been securely stored in our database and cannot be retrieved. In the event that it is forgotten, you will be able to reset it using the email address associated with your account.</p><p>Thanks,</p><p>[SITE_NAME] Team.</p>', 'Send mails to users after verified by Admin');
+
+CREATE TABLE IF NOT EXISTS `payments` (
+`payment_id` int(11) unsigned NOT NULL auto_increment,
+  `payment_hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `payment_user_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `payment_completed` smallint(1) NOT NULL DEFAULT '0',
+  `payment_package_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `payment_period` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `payment_amount` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+   PRIMARY KEY  (`payment_id`),
+   KEY `payment_hash` (`payment_hash`)
+);
+
+UPDATE `sconfig` SET `svalue` = '3.1' WHERE `soption` = 'version';

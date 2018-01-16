@@ -1,0 +1,41 @@
+body {
+    background-color: #f9f9f9!important;
+    background:transparent url(./images/bg-back.png)
+}
+
+@media (min-width: 1200px) {
+    .container {
+    width: 970px !important;
+    }
+}
+
+.install-wrap{
+    background-color: #ffffff;
+    padding: 20px 20px 10px;
+    margin: 0px auto 25px;
+    border: 1px solid #dddddd;
+    border-radius: 0 0 6px 6px;
+}
+
+.jumbotron{
+    margin-top: 20px;
+    margin-bottom: 0px!important;
+    background-color: #347ab8!important;
+    box-shadow: 1px 0 2px #2668a3 inset;
+}
+
+.jumbotron {
+    border-radius: 6px 6px 0 0!important;
+}
+
+.jumbotron h1 {
+    font-size: 50px!important;
+    color:#fff!important;
+    text-shadow: 1px 1px #000;
+    font-weight: 700;
+}
+
+.jumbotron p {
+    color: #fff;
+}
+

@@ -1,0 +1,49 @@
+.admin-login {
+    margin-top: 100px;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 20px 25px 30px;
+}
+
+.admin-login h2{
+    border-bottom: 1px solid #eceaea;
+    padding: 0 0 10px;
+    margin-bottom:20px;
+}
+
+.admin-login .input-group-addon {
+    background: #5cb85c none repeat scroll 0 0;
+    color: #fff;
+}
+
+.admin-login .input-group{
+    margin-bottom: 25px
+}
+
+.admin-login .box-icon {
+    background: #d8d8d8 none repeat scroll 0 0;
+    border-radius: 61px;
+    color: #fff;
+    font-size: 50px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    width: 80px;
+    margin: -61px auto 0;
+}
+
+.pagination {
+    margin: 0px !important;
+}
+
+a.navbar-brand img.brand {
+    margin-top:-8px;
+}
+
+.footer {
+    border-top: 1px solid #E5E5E5;
+    color: #777777;
+    padding-top: 19px;
+    margin-top:1em;
+}

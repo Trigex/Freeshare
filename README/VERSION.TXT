@@ -1,0 +1,8 @@
+vShare          3.0              10-Aug-2015            http://buyscripts.in/vshare-youtube-clone
+TinyMCE		    4.0.25		     05-May-2014		    http://tinymce.moxiecode.com
+ZendFramework   1.12.6           15-Apr-2014            http://framework.zend.com
+Pager	        2.4.8	         21-Apr-2009            http://pear.php.net/package/Pager/
+Smarty		    3.1.18		     07-Apr-2014		    http://www.smarty.net/download
+HTML Purifier   4.6.0            29-Apr-2014            http://htmlpurifier.org
+jQuery          1.11.0           02-May-2014            http://jquery.com/download/
+Bootstrap       3.1.1            02-May-2014            http://getbootstrap.com/getting-started/#download

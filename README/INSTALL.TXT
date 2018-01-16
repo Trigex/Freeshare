@@ -1,0 +1,25 @@
+===========================================
+VSHARE INSTALLATION
+===========================================
+
+You can find vShare Installation Instructions at
+
+https://www.buyscripts.in/docs/vshare/3.0/installation
+
+===========================================
+IMPORTANT NOTE
+===========================================
+
+YouTube clone have special requirement as you can see in
+
+http://buyscripts.in/vshare-requirements
+
+You can install youtube clone requirement on your server if you have a dedicated server or a linux VPS.
+
+If you need installation, contact
+
+http://hostonnet.com/youtube-clone-script-installation
+
+For YouTube Clone Hosting, visit
+
+http://hostonnet.com/ffmpeg-hosting

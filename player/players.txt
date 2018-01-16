@@ -1,0 +1,18 @@
+=================================================
+StrobeMediaPlayback
+=================================================
+
+player/StrobeMediaPlayback.swf
+
+Open Source Player From Adobe
+
+http://sourceforge.net/adobe/smp/home/Strobe%20Media%20Playback/
+
+
+=================================================
+JW Player
+=================================================
+
+player/player.swf
+
+

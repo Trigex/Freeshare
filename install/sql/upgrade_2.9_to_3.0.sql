@@ -1,0 +1,14 @@
+UPDATE `sconfig` SET `svalue`='250' WHERE `soption`='img_max_width';
+UPDATE `sconfig` SET `svalue`='130' WHERE `soption`='img_max_height';
+INSERT INTO `config` (`config_name`, `config_value`) VALUES ('youtube_api_key', '');
+INSERT INTO `config` (`config_name`, `config_value`) VALUES('user_photo_width', '120');
+INSERT INTO `config` (`config_name`, `config_value`) VALUES('user_photo_height', '190');
+INSERT INTO `config` (`config_name`, `config_value`) VALUES('user_avatar_width', '50');
+INSERT INTO `config` (`config_name`, `config_value`) VALUES('user_avatar_height', '40');
+INSERT INTO `config` (`config_name`, `config_value`) VALUES('recaptcha_sitekey', '');
+INSERT INTO `config` (`config_name`, `config_value`) VALUES('recaptcha_secretkey', '');
+INSERT INTO `config` (`config_name`, `config_value`) VALUES('spam_filter', '0');
+CREATE TABLE IF NOT EXISTS `banned_ips` ( `id` int(12) NOT NULL AUTO_INCREMENT PRIMARY KEY, `ip` varchar(20) NOT NULL ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+DELETE FROM `config` WHERE `config_name`='captcha_type';
+UPDATE `sconfig` SET `svalue`='0' WHERE `soption`='signup_captcha';
+UPDATE `sconfig` SET `svalue` = '3.0' WHERE `soption` = 'version';

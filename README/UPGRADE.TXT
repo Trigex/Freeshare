@@ -1,0 +1,94 @@
+Before Upgrading, check your current version.
+
+If you are using version 2.0, you need to upgrade it to next
+version first, that is version 2.1.
+
+If you use version 2.1 and follow upgrade instruction for v2.4,
+it will not work. So do upgrade in the order below.
+
+
+-----------------------------------------------------------------
+Upgrade vShare v1 to v2 Instructions available at
+-----------------------------------------------------------------
+
+https://www.buyscripts.in/vshare-upgrade-1-2
+
+
+-----------------------------------------------------------------
+Upgrade vShare v2 to Latest Release Instructions Available at
+-----------------------------------------------------------------
+
+http://forums.buyscripts.in/announcements/93-upgrading-vshare-v2-0-latest-v2-0-release.html
+
+
+-----------------------------------------------------------------
+Upgrade vShare v2.0 to v2.1
+-----------------------------------------------------------------
+
+http://forums.buyscripts.in/announcements/165-vshare-2-1-release-22-may-2007-a.html
+
+
+-----------------------------------------------------------------
+Upgrade vShare v2.1 Relase: 20070530 to Release: 20070625
+-----------------------------------------------------------------
+
+http://forums.buyscripts.in/announcements/486-vshare-2-1-release-20070625-a.html
+
+
+-----------------------------------------------------------------
+Upgrade vShare v2.2 Relase: 20070625 to Release: 20070712
+-----------------------------------------------------------------
+
+http://forums.buyscripts.in/announcements/677-vshare-2-2-release-20070712-a.html
+
+
+
+-----------------------------------------------------------------
+Upgrade vShare v2.2 Release: 20070712 to vShare 2.3
+-----------------------------------------------------------------
+
+http://forums.buyscripts.in/announcements/728-vshare-2-3-release-20070730-a.html
+
+
+-----------------------------------------------------------------
+Upgrade vShare v2.3 to 2.4
+-----------------------------------------------------------------
+
+http://forums.buyscripts.in/announcements/1031-vshare-2-4-a.html
+
+-----------------------------------------------------------------
+Upgrade vShare v2.4 to 2.5
+-----------------------------------------------------------------
+
+http://forums.buyscripts.in/announcements/1441-upgrade-vshare-v2-4-vshare-2-5-a.html
+
+
+-----------------------------------------------------------------
+Upgrade vShare v2.5 to 2.6
+-----------------------------------------------------------------
+
+http://forums.buyscripts.in/announcements/2001-upgrade-vshare-2-5-vshare-2-6-a.html
+
+-----------------------------------------------------------------
+Upgrade vShare v2.6 to 2.7
+-----------------------------------------------------------------
+
+http://forums.buyscripts.in/showthread.php/4234-Upgrade-vShare-2-6-to-vShare-2-7
+
+-----------------------------------------------------------------
+Upgrade vShare v2.7 to 2.8.1
+-----------------------------------------------------------------
+
+http://forums.buyscripts.in/announcements/8728-upgrade-vshare-2-7-vshare-2-8-1-a.html
+
+-----------------------------------------------------------------
+Upgrade vShare v2.8.1 to 2.9
+-----------------------------------------------------------------
+
+http://forums.buyscripts.in/showthread.php/10082-Upgrade-vShare-2-8-1-to-vShare-2-9
+
+-----------------------------------------------------------------
+Upgrade vShare v2.9 to 3.0
+-----------------------------------------------------------------
+
+https://www.buyscripts.in/docs/vshare/3.0/upgrade
